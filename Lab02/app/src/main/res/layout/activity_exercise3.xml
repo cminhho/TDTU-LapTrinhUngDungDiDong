@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon1" />
+
+        <TextView
+            android:id="@+id/txtPhone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPhone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Phone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon13" />
+
+        <TextView
+            android:id="@+id/txtMail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMail"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Mail"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgSafari"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon11" />
+
+        <TextView
+            android:id="@+id/txtSafari"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSafari"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Safari"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgMusic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon14" />
+
+        <TextView
+            android:id="@+id/txtMusic"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMusic"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Phone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
