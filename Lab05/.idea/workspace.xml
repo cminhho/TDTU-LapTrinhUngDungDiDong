@@ -37,6 +37,7 @@
     <session id="1152804719">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -44,13 +45,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="8" />
-          <entry key="png" value="4" />
+          <entry key="png" value="5" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="4" />
+          <entry key="Image" value="5" />
           <entry key="JAVA" value="8" />
           <entry key="XML" value="13" />
         </counts>
@@ -197,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-76" />
     <option name="y" value="98" />
     <option name="width" value="1400" />
@@ -290,7 +291,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="Nexus_6_API_24" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/screenshot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab07" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -395,6 +396,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" visible="true" weight="0.32995737" />
       <window_info id="Structure" side_tool="true" />
@@ -563,6 +565,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot/device-2019-03-23-lab05-01.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tdt/lab05/exercise3/Exercise3.java">
       <provider selected="true" editor-type-id="text-editor">
