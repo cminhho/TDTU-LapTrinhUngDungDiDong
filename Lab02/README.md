@@ -9,7 +9,7 @@
 ### Requirements
 - Design Android Calculator application layout
 ### Output:
-<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab02/screenshots/device-2019-03-23-lab02-02.png" alt="Design Android Calculator application layout/>
+<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab02/screenshots/device-2019-03-23-lab02-02.png" alt="Design Android Calculator application layout"/>
 
 
 ## Lab 02 - 03
