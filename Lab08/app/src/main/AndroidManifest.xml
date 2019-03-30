@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".Lab02Receiver">
+        <receiver android:name=".Lab02Receiver" android:exported="true" android:enabled="true">
             <intent-filter>
                 <action android:name="com.example.CUSTOM_INTENT"/>
             </intent-filter>
