@@ -5,7 +5,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-    
+    <permission android:name="com.example.admin.vn.PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.admin.vn.PRIVATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Lab02Sender">
+        <activity android:name=".Lab01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,9 +23,9 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".Lab02Receiver" android:exported="true" android:enabled="true">
+        <receiver android:name=".lab02.MyReceiver" >
             <intent-filter>
-                <action android:name="com.example.CUSTOM_INTENT"/>
+                <action android:name="com.example.admin.vn.MY_NOTIFICATION2" />
             </intent-filter>
         </receiver>
 

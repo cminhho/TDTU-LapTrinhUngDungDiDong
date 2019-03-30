@@ -13,7 +13,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+/**
+ * Created by thChung on 3/30/2019.
+ */
 public class Lab01 extends AppCompatActivity {
 
     private TextView txtWifiStatus;
@@ -28,7 +30,7 @@ public class Lab01 extends AppCompatActivity {
         initView();
         handleEvents();
 
-        checkWifiConnection();
+        checkWifiConnectionState();
     }
 
     @Override
@@ -63,7 +65,7 @@ public class Lab01 extends AppCompatActivity {
         btnOpenWifi = (Button) findViewById(R.id.btnOpenWifi);
     }
 
-    private void checkWifiConnection() {
+    private void checkWifiConnectionState() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
@@ -77,8 +79,8 @@ public class Lab01 extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
         // UnRegister the receiver when ever you pause the activity to avoid leak of receiver.
         unregisterReceiver(broadcastReceiver);
     }
@@ -87,7 +89,7 @@ public class Lab01 extends AppCompatActivity {
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            checkWifiConnection();
+            checkWifiConnectionState();
         }
     };
 }
