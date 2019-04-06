@@ -10,6 +10,7 @@ import com.example.admin.lab09.R;
 
 public class Exercise03 extends AppCompatActivity {
     Intent intent;
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class Exercise03 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 doSyncTasks(v);
+                MyIntentService.shouldContinue = true;
             }
         });
 
@@ -35,9 +37,9 @@ public class Exercise03 extends AppCompatActivity {
         });
     }
 
-    public void doSyncTasks(View view)
-    {
+    public void doSyncTasks(View view) {
         intent = new Intent(this, MyIntentService.class);
+        intent.putExtra("TASK_NAME", "TASK_NAME/" + i++);
         startService(intent);
     }
 }

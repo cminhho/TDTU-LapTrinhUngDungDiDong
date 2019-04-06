@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exercise02.Exercise02">
+        <activity android:name=".exercise01.Exercise01">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +26,11 @@
             android:exported="true" >
         </service>
         <service
-            android:name=".exercise03.exercise02.MyIntentService"
+            android:name=".exercise03.MyIntentService"
             android:enabled="true"
             android:exported="true" >
         </service>
+
     </application>
 
 </manifest>

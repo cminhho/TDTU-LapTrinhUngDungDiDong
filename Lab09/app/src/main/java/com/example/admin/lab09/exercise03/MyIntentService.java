@@ -15,27 +15,16 @@ public class MyIntentService extends IntentService {
     private static final String TAG = MyIntentService.class.getName();
 
     @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i(TAG, "Service onStartCommand " + startId);
-        return Service.START_STICKY;
-    }
-
-    @Override
-    protected void onHandleIntent(Intent arg0) {
-        Log.i(TAG, "Stop service!!!");
-        // check the condition
-        if (shouldContinue == false) {
-            stopSelf();
-            return;
-        }
-
-        // continue doing something
-        AsyncTask task = new MyAsyncTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, 1);
-
-        // check the condition
-        if (shouldContinue == false) {
-            stopSelf();
-            return;
+    protected void onHandleIntent(Intent intent) {
+        String taskName = intent.getStringExtra("TASK_NAME");
+        int i = 0;
+        while (i <= 2) {
+            try {
+                Thread.sleep(1000);
+                i++;
+                Log.i(TAG, taskName + ": " + i);
+            } catch (Exception e) {
+            }
         }
     }
 

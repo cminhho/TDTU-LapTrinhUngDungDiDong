@@ -23,6 +23,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 public class Exercise01 extends AppCompatActivity {
     private static final String DEFAULT_DOWNLOAD_LINK = "https://www.nicepng.com/png/full/18-180932_android-png-images-picture-transparent-stock-android-jetpack.png";
@@ -75,8 +76,11 @@ public class Exercise01 extends AppCompatActivity {
             try {
                 downloadUrl = new URL(strings[0]);
                 HttpURLConnection httpURLConnection = createHttpConnection(downloadUrl);
-//                downloadImage(downloadUrl, httpURLConnection);
-                publishProgress("10%");
+
+                for (int i = 1; i <= 5; i++) {
+                    publishProgress(i * 20 + " %");
+                }
+
                 displayDownloadedImage(httpURLConnection);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -106,37 +110,6 @@ public class Exercise01 extends AppCompatActivity {
         httpURLConnection.setDoInput(true);
         httpURLConnection.connect();
         return httpURLConnection;
-    }
-
-    private void downloadImage(URL downloadUrl, HttpURLConnection httpURLConnection) throws IOException {
-        int count;
-        String root = Environment.getExternalStorageDirectory().toString();
-        System.out.println("Downloading...");
-        // getting file length
-        int lenghtOfFile = httpURLConnection.getContentLength();
-
-        // input stream to read file - with 8k buffer
-        InputStream input = new BufferedInputStream(downloadUrl.openStream(), 8192);
-
-        // Output stream to write file
-        OutputStream output = new FileOutputStream(root+"/downloadedfile.jpg");
-        byte data[] = new byte[lenghtOfFile];
-
-        long total = 0;
-        while ((count = input.read(data)) != -1) {
-            total += count;
-
-            // writing data to file
-            output.write(data, 0, count);
-
-        }
-
-        // flushing output
-        output.flush();
-
-        // closing streams
-        output.close();
-        input.close();
     }
 
     private void displayDownloadedImage(HttpURLConnection httpURLConnection) throws IOException {

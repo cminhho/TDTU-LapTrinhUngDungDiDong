@@ -1,18 +1,17 @@
 package com.example.admin.lab09.exercise02;
 
 /**
- * Created by Admin on 4/6/2019.
+ * Created by thChung on 4/6/2019.
  */
 
 import android.app.Service;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MyService extends Service {
-    public static volatile boolean shouldContinue = true;
-    private static final String TAG = MyService.class.getName();
+    public static final String TAG = MyService.class.getName();
 
     public MyService() {
     }
@@ -24,19 +23,19 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
-        Log.i(TAG, "Service onStartCommand " + startId);
+        String taskName = intent.getStringExtra("TASK_NAME");
+        Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
 
         int i = 0;
-        while (true) {
+        while (i <= 100) {
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                i++;
+                Log.i(TAG, taskName + ": " + i);
+            } catch (Exception e) {
             }
-
-            Log.i(TAG, "Hello: " + i++);
         }
+        return Service.START_NOT_STICKY;
     }
 
     @Override
@@ -47,6 +46,7 @@ public class MyService extends Service {
 
     @Override
     public void onDestroy() {
-        Log.i(TAG, "Service onDestroy");
+        super.onDestroy();
+        Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
     }
 }
