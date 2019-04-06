@@ -25,14 +25,14 @@
 ### Question: AsyncTask vs IntentService vs Service?
 ### Anwsers
 <b>Service</b> 
-- Running in the application’s main thread
-- Using for long operations.
+- Runs in the application’s main thread.
+- Performs a longer-running operation.
 
 <b>IntentService</b> 
-- Using to perform a single background thread. 
-- Once done, the instance of IntentService terminate itself automatically. 
-- Using for long operations.
+- Handles a single worker thread, only one request will be processed at a time.
+- Stops itself when it runs out of work. 
+- Performs a longer-running operation .
 
 <b>AsyncTask</b> 
-- Running on a background thread and whose result is published on the UI thread
-- Using for short operations (a few seconds at the most.)
+- Runs on a background thread and whose result is published on the UI thread.
+- Used for short operations (a few seconds at the most.)
