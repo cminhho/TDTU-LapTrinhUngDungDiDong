@@ -16,11 +16,7 @@ public class MyIntentService extends IntentService {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-
         Log.i(TAG, "Service onStartCommand " + startId);
-
-        AsyncTask task = new MyAsyncTask().executeOnExecutor(
-                AsyncTask.THREAD_POOL_EXECUTOR, startId);
         return Service.START_STICKY;
     }
 
@@ -34,6 +30,7 @@ public class MyIntentService extends IntentService {
         }
 
         // continue doing something
+        AsyncTask task = new MyAsyncTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, 1);
 
         // check the condition
         if (shouldContinue == false) {
