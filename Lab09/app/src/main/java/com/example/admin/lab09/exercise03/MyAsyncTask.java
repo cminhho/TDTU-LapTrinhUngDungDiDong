@@ -1,7 +1,5 @@
 package com.example.admin.lab09.exercise03;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 

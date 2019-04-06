@@ -1,10 +1,7 @@
 package com.example.admin.lab09.exercise03;
 
-import android.app.Activity;
 import android.app.IntentService;
-import android.app.Service;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.util.Log;
 
 /**
