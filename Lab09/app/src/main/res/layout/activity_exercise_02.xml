@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Service + AsyncTask"
+        android:text="Lab09/02: Working with Service"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"/>
     <Button
@@ -19,7 +19,7 @@
         android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:padding="10dp"
-        android:text="Create IntentService to do SyncTask"/>
+        android:text="Create Service"/>
 
     <Button
         android:id="@+id/btnStopSyncTask"
@@ -29,7 +29,7 @@
         android:background="@color/colorAccent"
         android:padding="10dp"
         android:textColor="#fff"
-        android:text="Stop IntentService to do SyncTask"/>
+        android:text="Stop Service"/>
 
     <TextView
         android:layout_width="wrap_content"

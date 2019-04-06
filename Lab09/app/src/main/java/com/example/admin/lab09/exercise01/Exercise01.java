@@ -1,4 +1,4 @@
-package com.example.admin.lab09.excercise01;
+package com.example.admin.lab09.exercise01;
 
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
@@ -37,7 +37,7 @@ public class Exercise01 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_exercise_01);
 
         btnDownloadSyncTask = (Button) findViewById(R.id.btnDownloadSyncTask);
         edtLink = (EditText) findViewById(R.id.edtLink);

@@ -27,9 +27,16 @@ public class MyService extends Service {
 
         Log.i(TAG, "Service onStartCommand " + startId);
 
-        AsyncTask task = new MyAsyncTask().executeOnExecutor(
-                AsyncTask.THREAD_POOL_EXECUTOR, startId);
-        return Service.START_STICKY;
+        int i = 0;
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            Log.i(TAG, "Hello: " + i++);
+        }
     }
 
     @Override

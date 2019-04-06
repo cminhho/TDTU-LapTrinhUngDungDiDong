@@ -1,4 +1,4 @@
-package com.example.admin.lab09.exercise03.exercise02;
+package com.example.admin.lab09.exercise03;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ public class Exercise03 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_service_example);
+        setContentView(R.layout.activity_exercise_03);
 
         Button btnCreateSyncTask = (Button) findViewById(R.id.btnCreateSyncTask);
         Button btnStopSyncTask = (Button) findViewById(R.id.btnStopSyncTask);

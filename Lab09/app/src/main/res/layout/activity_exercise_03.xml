@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IntentService + AsyncTask"
+        android:text="Lab09/03: IntentService + AsyncTask"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"/>
     <Button

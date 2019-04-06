@@ -1,4 +1,4 @@
-package com.example.admin.lab09.exercise03.exercise02;
+package com.example.admin.lab09.exercise03;
 
 import android.os.AsyncTask;
 import android.util.Log;
