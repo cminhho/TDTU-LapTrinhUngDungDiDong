@@ -17,11 +17,19 @@ public class Exercise02 extends AppCompatActivity {
         setContentView(R.layout.activity_exercise_02);
 
         Button btnCreateSyncTask = (Button) findViewById(R.id.btnCreateSyncTask);
+        Button btnStopSyncTask = (Button) findViewById(R.id.btnStopSyncTask);
 
         btnCreateSyncTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 doSyncTasks(v);
+            }
+        });
+
+        btnStopSyncTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyService.shouldContinue = true;
             }
         });
     }
