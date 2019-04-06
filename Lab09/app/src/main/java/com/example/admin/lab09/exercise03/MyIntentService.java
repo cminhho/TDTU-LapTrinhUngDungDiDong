@@ -18,7 +18,7 @@ public class MyIntentService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         String taskName = intent.getStringExtra("TASK_NAME");
         int i = 0;
-        while (i <= 2) {
+        while (i <= 100) {
             try {
                 Thread.sleep(1000);
                 i++;

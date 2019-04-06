@@ -24,14 +24,12 @@ public class Exercise03 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 doSyncTasks(v);
-                MyIntentService.shouldContinue = true;
             }
         });
 
         btnStopSyncTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MyIntentService.shouldContinue = false;
                 stopService(intent);
             }
         });

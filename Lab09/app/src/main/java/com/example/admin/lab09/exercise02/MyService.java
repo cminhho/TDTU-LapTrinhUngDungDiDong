@@ -23,7 +23,7 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        String taskName = intent.getStringExtra("TASK_NAME");
+        String taskName = intent.getStringExtra(Exercise02.TASK_NAME);
         Toast.makeText(this, "Service Started", Toast.LENGTH_LONG).show();
 
         int i = 0;

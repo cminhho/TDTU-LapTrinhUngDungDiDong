@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.example.admin.lab09.R;
 
 public class Exercise02 extends AppCompatActivity {
+    public static final String TASK_NAME = "TASK_NAME";
     Intent intent;
     private TextView txtProgress;
     int i = 0;
@@ -41,8 +42,7 @@ public class Exercise02 extends AppCompatActivity {
     public void doSyncTasks(View view)
     {
         intent = new Intent(this, MyService.class);
-
-        intent.putExtra("TASK_NAME", "TASK_NAME/" + i++);
+        intent.putExtra(TASK_NAME, "TASK_NAME/" + i++);
         startService(intent);
     }
 
