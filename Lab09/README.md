@@ -20,3 +20,7 @@
 ### Output:
 <img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_02.png" alt="Working with Service + AsynTask"/>
 
+
+## Questions:
+- What is the difference between services and intent services in android?
+- AsyncTask vs IntentService?
