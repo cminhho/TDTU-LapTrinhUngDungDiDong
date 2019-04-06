@@ -34,7 +34,13 @@
 - Performs a longer-running operation.
 
 <b>IntentService</b> 
-- Handles a single worker thread, only
+- Handles a single worker thread, only one request will be processed at a time.
+- Stops itself when it runs out of work. 
+- Performs a longer-running operation .
+
+<b>AsyncTask</b> 	## References:
+- Runs on a background thread and whose result is published on the UI thread.
+- Used for short operations (a few seconds at the most.)
 
 ## References:
 - https://developer.android.com/reference/android/os/AsyncTask
