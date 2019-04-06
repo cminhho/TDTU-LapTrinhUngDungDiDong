@@ -1,4 +1,4 @@
-package com.example.admin.lab09.exercise02;
+package com.example.admin.lab09.exercise03.exercise02;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -16,14 +16,16 @@ public class MyAsyncTask extends AsyncTask<Integer, Integer, String> {
 
         int startId = params[0];
         int i = 0;
-        while (true) {
+        while (i <= 3) {
             publishProgress(startId, i);
             try {
                 Thread.sleep(1000);
                 i++;
+                Log.i(TAG, "SLEEP: " + i);
             } catch (Exception e) {
             }
         }
+        return ("Service complete " + startId);
     }
 
     @Override
@@ -38,6 +40,6 @@ public class MyAsyncTask extends AsyncTask<Integer, Integer, String> {
 
     @Override
     protected void onProgressUpdate(Integer... values) {
-        Log.i(TAG, "ServiceID " + values[0] + " : Service Progress " + values[1] + " %");
+        Log.i(TAG, "ServiceID " + values[0] + " : Service Progress " + values[1]);
     }
 }

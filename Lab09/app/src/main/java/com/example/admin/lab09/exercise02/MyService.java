@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.util.Log;
 
 public class MyService extends Service {
+    public static volatile boolean shouldContinue = true;
     private static final String TAG = MyService.class.getName();
 
     public MyService() {
