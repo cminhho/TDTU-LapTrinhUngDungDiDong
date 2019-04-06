@@ -1,5 +1,7 @@
 package com.example.admin.lab09.exercise03;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -8,7 +10,6 @@ import android.util.Log;
  */
 
 public class MyAsyncTask extends AsyncTask<Integer, Integer, String> {
-
     private static final String TAG = MyAsyncTask.class.getName();
 
     @Override
