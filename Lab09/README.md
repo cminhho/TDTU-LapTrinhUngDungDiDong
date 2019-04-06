@@ -23,7 +23,7 @@
 
 <b>Output:</b>
 
-<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_02.png" alt="Working with Service + AsynTask"/>
+<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_03.png" alt="Working with Service + AsynTask"/>
 
 
 ## Questions/Anwsers
@@ -38,7 +38,7 @@
 - Stops itself when it runs out of work. 
 - Performs a longer-running operation .
 
-<b>AsyncTask</b> 	## References:
+<b>AsyncTask</b>
 - Runs on a background thread and whose result is published on the UI thread.
 - Used for short operations (a few seconds at the most.)
 
