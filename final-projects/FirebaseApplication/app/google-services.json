@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "390985825876",
+    "firebase_url": "https://tdt-firestore-d67b0.firebaseio.com",
+    "project_id": "tdt-firestore-d67b0",
+    "storage_bucket": "tdt-firestore-d67b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390985825876:android:2edd37ddcf2e6ce0",
+        "android_client_info": {
+          "package_name": "com.example.admin.firebaseapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWC6TW-se7FiG__N4_jAN70nI9A1AWXOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390985825876-vlkl72r2n366lfeaa2nur4vmrtvfrmm7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
