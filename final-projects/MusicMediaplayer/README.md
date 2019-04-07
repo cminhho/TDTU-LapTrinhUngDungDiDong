@@ -1,1 +1,1 @@
-
+References: http://programmerguru.com/android-tutorial/android-mediaplayer-example-play-from-internet
