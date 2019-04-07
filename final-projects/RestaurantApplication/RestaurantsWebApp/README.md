@@ -7,6 +7,9 @@ For more information about Firestore visit [the docs][firestore-docs].
 
 [firestore-docs]: https://firebase.google.com/docs/firestore/
 
+## Codelab
+- https://codelabs.developers.google.com/codelabs/firestore-web/#0
+
 ## Setup and run the app
 
 Follow these steps to setup and run the quickstart:
