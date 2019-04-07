@@ -8,7 +8,7 @@ For more information about Firestore visit [the docs][firestore-docs].
 [firestore-docs]: https://firebase.google.com/docs/firestore/
 
 ## Codelab
-- https://codelabs.developers.google.com/codelabs/firestore-web/#0
+- Follow the <a href="https://codelabs.developers.google.com/codelabs/firestore-web/#0">Cloud Firestore Web Codelab</a> to set up this sample.
 
 ## Setup and run the app
 
