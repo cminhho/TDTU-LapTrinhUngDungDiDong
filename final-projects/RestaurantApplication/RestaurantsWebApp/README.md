@@ -7,40 +7,12 @@ For more information about Firestore visit [the docs][firestore-docs].
 
 [firestore-docs]: https://firebase.google.com/docs/firestore/
 
-## Codelab
-- Follow the <a href="https://codelabs.developers.google.com/codelabs/firestore-web/#0">Cloud Firestore Web Codelab</a> to set up this sample.
-
 ## Setup and run the app
 
-Follow these steps to setup and run the quickstart:
-
- 1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com).
- 1. In the Firebase console, enable Anonymous authentication on your project by doing: **Authentication > SIGN-IN METHOD > Anonymous > Enable > SAVE**
- 1. In the Firebase console, enable Cloud Firestore on your project by doing: **Database > Create Database**
- 1. Select testing mode for the security rules
- 1. Copy/Download this repo and open this folder in a Terminal.
- 1. Install the Firebase CLI if you do not have it installed on your machine:
-    ```bash
-    npm -g i firebase-tools
-    ```
- 1. Set the CLI to use the project you created on step 1:
-    ```bash
-    firebase use --add
-    ```
- 1. Deploy the Firestore security rules and indexes:
-    ```bash
-    firebase deploy --only firestore
-    ```
- 1. Run a local server:
-    ```bash
-    firebase serve
-    ```
- 1. As indicated, open [http://localhost:5000](http://localhost:5000) in your browser and try out the app.
+- Follow the <a href="https://codelabs.developers.google.com/codelabs/firestore-web/#0">Cloud Firestore Web Codelab</a> to set up this sample.
  
-## Support
+## Live Demo
 
-- [Firebase Support](https://firebase.google.com/support/)
+https://tdt-firestore-d67b0.firebaseapp.com/
 
-## License
-
-© Google, 2017. Licensed under an [Apache-2](../LICENSE) license.
+<img src="screenshots/finished_image.png" />
