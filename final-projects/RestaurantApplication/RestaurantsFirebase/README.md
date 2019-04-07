@@ -1,7 +1,9 @@
 # Firebase Restaurant App
 ### Introduction
 
-### Run the app
+## Setup
+
+Follow the <a href="https://codelabs.developers.google.com/codelabs/firestore-android/index.html">Cloud Firestore Android Codelab</a> to set up this project.
 
 ### Output
 
