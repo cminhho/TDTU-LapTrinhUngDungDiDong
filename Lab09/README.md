@@ -6,7 +6,7 @@
 
 <b>Output:</b>
 
-<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_01.png" alt="Working with AsynTask"/>
+<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/screenshots/exercise_01.png" alt="Working with AsynTask"/>
 
 
 ### Lab 9 - 02
@@ -15,7 +15,7 @@
 
 <b>Output:</b>
 
-<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_02.png" alt="Working with Service + AsynTask"/>
+<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/screenshots/exercise_02.png" alt="Working with Service + AsynTask"/>
 
 ### Lab 9 - 03
 <b>Requirements:</b>
@@ -23,7 +23,7 @@
 
 <b>Output:</b>
 
-<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/sceenshots/exercise_03.png" alt="Working with Service + AsynTask"/>
+<img width="400" src="https://github.com/cminhho/TDTU-LapTrinhUngDungDiDong/blob/master/Lab09/screenshots/exercise_03.png" alt="Working with Service + AsynTask"/>
 
 
 ## Questions/Anwsers
