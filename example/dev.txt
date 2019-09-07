@@ -1,0 +1,1 @@
+https://github.com/mrmike/DiffUtil-sample/blob/master/app/src/main/res/layout/item_actor.xml
