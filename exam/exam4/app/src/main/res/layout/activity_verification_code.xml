@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="30dp"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large_margin"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="We've sent a verification code to "
+      android:textSize="20sp" />
+    <TextView
+      android:id="@+id/activity_verification_code_txt_message"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="xyz@tdtu.edu.vn"
+      android:textColor="@color/colorPrimary"
+      android:textSize="20sp" />
+  </LinearLayout>
+
+  <EditText
+    android:id="@+id/activity_verification_code_edt_code"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large_margin"
+    android:padding="@dimen/small_margin"
+    android:background="#fbfefd"
+    android:hint="Enter verify cation code"
+    android:inputType="number" />
+
+  <Button
+    android:id="@+id/activity_verification_code_btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_margin"
+    android:background="@color/colorPrimary"
+    android:text="Verify"
+    android:textColor="@color/colorWhite" />
+</LinearLayout>

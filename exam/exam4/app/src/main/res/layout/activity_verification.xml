@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="30dp"
+  android:orientation="vertical">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Verify your email address"
+    android:textSize="20sp" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please verify your TDTU email address so we know that it's realy you!" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/large_margin"
+    android:orientation="horizontal">
+    <EditText
+      android:id="@+id/activity_verification_edt_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/small_margin"
+      android:layout_marginLeft="@dimen/small_margin"
+      android:background="#fbfefd"
+      android:hint="Ex: xyz@tdtu.edu.vn"
+      android:inputType="textEmailAddress" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/activity_verification_txt_err"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorDanger"
+    android:text="" />
+
+  <Button
+    android:id="@+id/activity_verification_btn_verify"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_margin"
+    android:background="@color/colorPrimary"
+    android:text="Verify email address"
+    android:textColor="@color/colorWhite" />
+</LinearLayout>

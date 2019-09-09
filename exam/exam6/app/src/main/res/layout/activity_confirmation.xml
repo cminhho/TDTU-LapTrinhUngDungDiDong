@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="30dp"
+  android:orientation="vertical">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your password has been updated, click [Click here to verify] to access the system"
+    android:textSize="20sp" />
+
+  <Button
+    android:id="@+id/activity_verification_code_btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_margin"
+    android:background="@color/colorPrimary"
+    android:text="Click here to verify"
+    android:textColor="@color/colorWhite" />
+</LinearLayout>

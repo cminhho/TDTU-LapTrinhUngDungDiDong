@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">lab02</string>
+  <!--login-->
+  <string name="login_app">Login App</string>
+  <string name="login_msg_username">Username</string>
+  <string name="login_msg_password">Password</string>
+  <string name="login_msg_log_in">Log in</string>
+  <string name="login_msg_use_your_tdtu_email">Use your TDTU email</string>
+  <!--home-->
+  <string name="verification_msg_name">Name: </string>
+  <string name="verification_msg_email">Email: </string>
+  <string name="verification_msg_mobile">Phone: </string>
+</resources>
